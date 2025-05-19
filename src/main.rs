@@ -78,6 +78,18 @@ fn main() {
         TimerFuture::new(Duration::new(2, 0)).await;
         println!("Steven Setiawan's Komputer: done!");
     });
+
+    spawner.spawn(async {
+        println!("Steven Setiawan's Komputer: howdy-2!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("Steven Setiawan's Komputer: done-2!");
+    });
+
+    spawner.spawn(async {
+        println!("Steven Setiawan's Komputer: howdy-3!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("Steven Setiawan's Komputer: done-3!");
+    });
     
     println!("Steven Setiawan's Komputer: hey hey");
 
