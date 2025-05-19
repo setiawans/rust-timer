@@ -78,6 +78,8 @@ fn main() {
         TimerFuture::new(Duration::new(2, 0)).await;
         println!("Steven Setiawan's Komputer: done!");
     });
+    
+    println!("Steven Setiawan's Komputer: hey hey");
 
     drop(spawner);
     executor.run();
